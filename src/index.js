@@ -18,5 +18,5 @@ const pokemons = [
     {"id":10,"name":"caterpie","types":["bug"],"evolution":null,"url":"https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/10.png"}
 ];
 
-ReactDOM.render(<App />, document.getElementById('root'));
+ReactDOM.render(<App pokemonsCrew = {pokemons}/>, document.getElementById('root'));
 registerServiceWorker();
