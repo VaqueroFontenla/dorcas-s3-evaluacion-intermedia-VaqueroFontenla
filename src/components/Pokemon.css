@@ -2,7 +2,7 @@
   height: 300px;
   border: 1px solid black;
   border-radius: 5px;
-  background-color: #C9EDF0;
+  background-color: #c9edf0;
   display: flex;
   flex-direction: column;
   justify-content: flex-end;
@@ -47,5 +47,5 @@
   text-transform: uppercase;
   color: white;
   font-weight: bold;
-  background-color: #7C8282;
+  background-color: #7c8282;
 }

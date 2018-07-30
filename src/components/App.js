@@ -1,10 +1,10 @@
 import React, {Component} from 'react';
+import PropTypes from 'prop-types';
 import Pokemon from './Pokemon';
 import './App.css';
 
 class App extends Component {
   render() {
-    console.dir(this.props.pokemonsCrew);
     return (
       <div className="App">
         <h1 className="titlePokemon">Mi lista de pokemon</h1>
@@ -24,9 +24,13 @@ class App extends Component {
             }
          </ul>
         </main>
-
     </div>);
   }
 }
 
+Pokemon.propTypes = {
+  img: PropTypes.string,
+  name: PropTypes.string,
+  abilities: PropTypes.array
+};
 export default App;
