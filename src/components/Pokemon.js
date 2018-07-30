@@ -12,9 +12,9 @@ class Pokemon extends Component {
         <h2 className="pokemon__name">{this.props.name}</h2>
       <ul className="pokemon__abilities">
         {
-          this.props.abilities.map(function(ability) {
+          this.props.abilities.map(function(ability,index) {
             return (
-              <li>{ability}</li>)
+              <li key={index.toString()}>{ability}</li>)
           })
         }
       </ul>
