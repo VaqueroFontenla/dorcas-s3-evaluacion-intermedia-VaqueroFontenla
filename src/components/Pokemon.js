@@ -4,15 +4,16 @@ import './Pokemon.css';
 class Pokemon extends Component {
   render() {
     console.log(this.props.abilities);
+    const {img, name, abilities} = this.props;
     return (
       <div className="pokemon">
         <div className="pokemon__img">
-          <img className="pokemon__img-img" src={this.props.img} alt=""/>
+          <img className="pokemon__img-img" src={img} alt=""/>
         </div>
-        <h2 className="pokemon__name">{this.props.name}</h2>
+        <h2 className="pokemon__name">{name}</h2>
       <ul className="pokemon__abilities">
         {
-          this.props.abilities.map(function(ability,index) {
+          abilities.map(function(ability,index) {
             return (
               <li key={index.toString()}>{ability}</li>)
           })
