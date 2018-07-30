@@ -15,7 +15,7 @@ class Pokemon extends Component {
         {
           abilities.map(function(ability,index) {
             return (
-              <li key={index.toString()}>{ability}</li>)
+              <li className="pokemon__ability" key={index.toString()}>{ability}</li>)
           })
         }
       </ul>
